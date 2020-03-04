@@ -4,7 +4,9 @@ import { CourseListComponent } from './course-list.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { CourseService } from '../../services/course.service';
 import { EmitterService } from '../../services/emitter.service';
-import { MatPaginatorModule, MatSortModule, MatTableModule } from '@angular/material';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('CourseListComponent', () => {
