@@ -14,8 +14,8 @@ import { EmitterService } from '../../services/emitter.service';
   styleUrls: ['./course-list.component.scss']
 })
 export class CourseListComponent implements OnInit, AfterViewInit {
-  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
-  @ViewChild(MatSort, { static: false }) sort: MatSort;
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   dataSource: MatTableDataSource<string> = new MatTableDataSource<string>();
   displayedColumns: string[] = ['detail', 'title', 'author', 'category', 'action'];
