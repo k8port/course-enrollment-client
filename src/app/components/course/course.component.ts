@@ -22,8 +22,8 @@ export class CourseComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['name'];
   dataSource: MatTableDataSource<string> = new MatTableDataSource<string>();
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
 
   constructor(
     private logService: LogService,

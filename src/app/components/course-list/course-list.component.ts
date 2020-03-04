@@ -14,9 +14,10 @@ import { EmitterService } from '../../services/emitter.service';
   styleUrls: ['./course-list.component.scss']
 })
 export class CourseListComponent implements OnInit, AfterViewInit {
-  dataSource: MatTableDataSource<Course> = new MatTableDataSource();
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatPaginator, { static: false }) paginator: MatPaginator;
+  @ViewChild(MatSort, { static: false }) sort: MatSort;
+
+  dataSource: MatTableDataSource<string> = new MatTableDataSource<string>();
   displayedColumns: string[] = ['detail', 'title', 'author', 'category', 'action'];
   errorMessage: string;
   infoMessage: string;

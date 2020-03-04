@@ -15,7 +15,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatTableModule} from '@angular/material/table';
+import { MatHeaderRowDef, MatTableModule } from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
@@ -23,6 +23,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NoopAnimationPlayer } from '@angular/animations';
 
 @NgModule({
   declarations: [
