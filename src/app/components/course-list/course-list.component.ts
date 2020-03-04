@@ -17,8 +17,8 @@ export class CourseListComponent implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
 
-  dataSource: MatTableDataSource<string> = new MatTableDataSource<string>();
   displayedColumns: string[] = ['detail', 'title', 'author', 'category', 'action'];
+  dataSource: MatTableDataSource<string> = new MatTableDataSource<string>(this.displayedColumns);
   errorMessage: string;
   infoMessage: string;
 

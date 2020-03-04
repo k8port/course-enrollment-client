@@ -1,6 +1,6 @@
 <div class="container">
   <header class="jumbotron">
-    <h1 class="display-3">Welcome to {{currentCourse.title}}</h1>
+    <h1 *ngIf="currentCourse" class="display-3">Welcome to {{currentCourse.title}}</h1>
   </header>
   <div class="alert alert-success">
     <strong>Hit Count: </strong> {{courseHitCount}}

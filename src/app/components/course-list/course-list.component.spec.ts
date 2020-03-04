@@ -8,6 +8,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('CourseListComponent', () => {
   let component: CourseListComponent;
@@ -15,7 +16,12 @@ describe('CourseListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, MatTableModule, MatPaginatorModule, HttpClientTestingModule, MatSortModule],
+      imports: [RouterTestingModule,
+        MatTableModule,
+        MatPaginatorModule,
+        HttpClientTestingModule,
+        MatSortModule,
+        BrowserAnimationsModule],
       declarations: [CourseListComponent],
       providers: [CourseService, EmitterService]
     })
